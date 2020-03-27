@@ -13,7 +13,7 @@
         <header class="header-top header-top__header-top">
             <div class="logo">КиноПульс</div>
             <form action="#" class="search">
-                <input type="search" class="search__input" placeholder="Фильмы, сериалы, актеры">
+                <input type="text" class="input search__input" placeholder="Фильмы, сериалы, актеры">
                 <button type="submit" class="search__button">
                     <img src="./img/search-icon.svg" alt="search-icon" class="search__icon">
                 </button>
@@ -34,50 +34,30 @@
                     <span class="info__country">США, 2021 год</span>
                     <a href="#" class="info__play">Смотреть трейлер</a>
                 </div>
-                <a href="#" class="info__more">Подробнее</a>
+                <a href="#poster-id" class="info__more">Подробнее</a>
             </div>
 
-            <div class="content content__content">
+            <div class="wrapper">
                 <div class="left-block">
-                    <img src="./img/poster.jpg" alt="cover" class="left-block__img">
-                    <button class="left-block__btn">Буду смотреть</button>
-                    <h3 class="title left-block__actors-title">В главных ролях:</h3>
-                    <ul class="left-block__actors-list">
-                        <li class="left-block__actors-item">
-                            <a href="#" class="left-block__actors-link">Роберт Паттинсон</a>
-                        </li>
-                        <li class="left-block__actors-item">
-                            <a href="#" class="left-block__actors-link">Зои Кравиц</a>
-                        </li>
-                        <li class="left-block__actors-item">
-                            <a href="#" class="left-block__actors-link">Колин Фаррелл</a>
-                        </li>
-                        <li class="left-block__actors-item">
-                            <a href="#" class="left-block__actors-link">Питер Сарсгаард</a>
-                        </li>
-                        <li class="left-block__actors-item">
-                            <a href="#" class="left-block__actors-link">Пол Дано</a>
-                        </li>
-                        <li class="left-block__actors-item">
-                            <a href="#" class="left-block__actors-link">Энди Серкис</a>
-                        </li>
-                        <li class="left-block__actors-item">
-                            <a href="#" class="left-block__actors-link">Джеффри Райт</a>
-                        </li>
-                        <li class="left-block__actors-item">
-                            <a href="#" class="left-block__actors-link">Джон Туртурро</a>
-                        </li>
-                        <li class="left-block__actors-item">
-                            <a href="#" class="left-block__actors-link">Макс Карвер</a>
-                        </li>
-                        <li class="left-block__actors-item">
-                            <a href="#" class="left-block__actors-link">Кон О’Нилл</a>
-                        </li>
-                    </ul>
+                    <img src="./img/poster.jpg" alt="Постер" class="left-block__poster" id="poster-id">
+                    <button class="button left-block__btn">Буду смотреть</button>
+                    <div class="actors">
+                        <h3 class="title actors__title">В главных ролях:</h3>
+                        <a href="#" class="actors__subtitle">Роберт Паттинсон</a>
+                        <a href="#" class="actors__subtitle">Зои Кравиц</a>
+                        <a href="#" class="actors__subtitle">Колин Фаррелл</a>
+                        <a href="#" class="actors__subtitle">Питер Сарсгаард</a>
+                        <a href="#" class="actors__subtitle">Пол Дано</a>
+                        <a href="#" class="actors__subtitle">Энди Серкис</a>
+                        <a href="#" class="actors__subtitle">Джеффри Райт</a>
+                        <a href="#" class="actors__subtitle">Джон Туртурро</a>
+                        <a href="#" class="actors__subtitle">Макс Карвер</a>
+                        <a href="#" class="actors__subtitle">Кон О’Нилл</a>
+                    </div>
                 </div>
-
-                <div class="navigation-block">
-                    <nav class="tabs">
+                
+                <div class="content content__block">
+                    <nav class="tabs tabs__tabs">
                         <a href="#" class="tabs__link tabs__link--active">Описание</a>
                         <a href="#" class="tabs__link">Рецензии</a>
                         <a href="#" class="tabs__link">Премьеры</a>
@@ -85,22 +65,29 @@
                         <a href="#" class="tabs__link">Награды</a>
                         <a href="#" class="tabs__link">Факты</a>
                         <a href="#" class="tabs__link">Сайты</a>
+                        <a href="#" class="tabs__link">
+                            <img src="./img/bookmark-icon.svg" alt="bookmark" class="tabs__img">
+                        </a>
                     </nav>
-
-                    <div class="flex-content">
-                        <div class="center-block">
-                            <div class="center-block__content">
-                                <p class="center-block__text">Предстоящий американский супергеройский фильм, основанный на одноимённых комиксах издательства DC Comics. Картина будет выпущена компанией Warner Bros. и будет перезагрузкой всех фильмов о Бэтмене.</p><br>
-                                <p class="center-block__text">Фильм является десятым по счёту фильмом из Расширенной вселенной DC. Режиссёром и сценаристом фильма выступит Мэтт Ривз, а главную роль исполнит Роберт Паттинсон</p>
-                                <h4 class="center-block__title">Разработка</h4>
-                                <p class="center-block__text">В октябре 2014 года студия Warner Bros. объявила, что в разработке находится сольный фильм о Бэтмене, роль которого вновь исполнит Бен Аффлек. В июле 2015 года сообщалось, что Аффлек ведёт переговоры со студией по поводу постановки фильма и совместного написания сценария с Джеффом Джонсом.</p><br>
-                                <p class="center-block__text">После выхода фильма «Бэтмен против Супермена: На заре справедливости» руководитель агентства WME Патрик Уайтсел подтвердил, что Аффлек написал сценарий для сольного фильма о Бэтмене и в настоящий момент его рассматривают студия и DC. В мае 2016 года Джереми Айронс подтвердил, что он появится в фильме про Тёмного Рыцаря.</p><br>
-                                <p class="center-block__text">На Comic-Con в Сан-Диего в июле 2016 года было официально подтверждено, что Аффлек станет режиссёром картины. В августе 2016 года на одной из страниц Аффлека в социальных сетях был опубликован тестовый материал, в котором был показан персонаж Детстроук. 8 сентября 2016 года Джефф Джонс подтвердил, что Джо Манганьелло сыграет наёмника Слейда Уилсона, который, возможно, станет главным злодеем фильма.</p>
-                            </div>
+                    <div class="content__flex">
+                        <div class="content-block content-block__item">
+                            <p class="content-block__text">Предстоящий американский супергеройский фильм, основанный на одноимённых комиксах издательства DC Comics. Картина будет выпущена компанией Warner Bros. и будет перезагрузкой всех фильмов о Бэтмене.</p><br>
+                            <p class="content-block__text">Фильм является десятым по счёту фильмом из Расширенной вселенной DC. Режиссёром и сценаристом фильма выступит Мэтт Ривз, а главную роль исполнит Роберт Паттинсон</p>
+                            <h3 class="title content-block__title">Разработка</h3>
+                            <p class="content-block__text">В октябре 2014 года студия Warner Bros. объявила, что в разработке находится сольный фильм о Бэтмене, роль которого вновь исполнит Бен Аффлек. В июле 2015 года сообщалось, что Аффлек ведёт переговоры со студией по поводу постановки фильма и совместного написания сценария с Джеффом Джонсом.</p><br>
+                            <p class="content-block__text">После выхода фильма «Бэтмен против Супермена: На заре справедливости» руководитель агентства WME Патрик Уайтсел подтвердил, что Аффлек написал сценарий для сольного фильма о Бэтмене и в настоящий момент его рассматривают студия и DC. В мае 2016 года Джереми Айронс подтвердил, что он появится в фильме про Тёмного Рыцаря.</p><br>
+                            <p class="content-block__text">На Comic-Con в Сан-Диего в июле 2016 года было официально подтверждено, что Аффлек станет режиссёром картины. В августе 2016 года на одной из страниц Аффлека в социальных сетях был опубликован тестовый материал, в котором был показан персонаж Детстроук. 8 сентября 2016 года Джефф Джонс подтвердил, что Джо Манганьелло сыграет наёмника Слейда Уилсона, который, возможно, станет главным злодеем фильма.</p>
                         </div>
-                        <div class="right-block right-block__right-block">
+                        <div class="right-block">
+                            <h3 class="title right-block__title">Подпишитесь на обновления</h3>
+                            <form action="#" class="right-block__form">
+                                <input type="text" class="right-block__input" placeholder="Ваш Email">
+                                <button class="button right-block__btn">
+                                    <img src="./img/check.svg" alt="check" class="right-block__check">
+                                </button>
+                            </form>
                             <a href="#" class="right-block__link">
-                                <img class="right-block__img" src="./img/right-banner.png" alt="right-banner">
+                                <img src="./img/right-banner.png" alt="Баннер" class="right-block__img">
                             </a>
                         </div>
                     </div>
