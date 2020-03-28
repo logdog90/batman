@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Бэтмен 2021 - страница о фильме</title>
 </head>
@@ -25,14 +28,14 @@
         </header>
 
         <main class="main">
-            <h1 class="main__title">Бэтмен</h1>
-            <small class="main__title-en">The Batman</small>
+            <h1 class="main__title animated fadeInRightBig">Бэтмен</h1>
+            <small class="main__title-en animated fadeInRightBig">The Batman</small>
 
-            <div class="info info__info">
+            <div class="info info__info animated fadeInUpBig delay-2s">
                 <div class="info__movie-info">
                     <span class="info__tag">Фильм</span>
                     <span class="info__country">США, 2021 год</span>
-                    <a href="#" class="info__play">Смотреть трейлер</a>
+                    <a data-fancybox href="https://www.youtube.com/watch?v=Xo8i2ZDMlQg" class="info__play">Смотреть трейлер</a>
                 </div>
                 <a href="#poster-id" class="info__more">Подробнее</a>
             </div>
@@ -58,25 +61,49 @@
                 
                 <div class="content content__block">
                     <nav class="tabs tabs__tabs">
-                        <a href="#" class="tabs__link tabs__link--active">Описание</a>
-                        <a href="#" class="tabs__link">Рецензии</a>
-                        <a href="#" class="tabs__link">Премьеры</a>
-                        <a href="#" class="tabs__link">Актеры</a>
-                        <a href="#" class="tabs__link">Награды</a>
-                        <a href="#" class="tabs__link">Факты</a>
-                        <a href="#" class="tabs__link">Сайты</a>
+                        <a href="#about" class="tabs__link tabs__link--active">Описание</a>
+                        <a href="#reviews" class="tabs__link">Рецензии</a>
+                        <a href="#premieres" class="tabs__link">Премьеры</a>
+                        <a href="#actors" class="tabs__link">Актеры</a>
+                        <a href="#awards" class="tabs__link">Награды</a>
+                        <a href="#facts" class="tabs__link">Факты</a>
+                        <a href="#sites" class="tabs__link">Сайты</a>
                         <a href="#" class="tabs__link">
                             <img src="./img/bookmark-icon.svg" alt="bookmark" class="tabs__img">
                         </a>
                     </nav>
                     <div class="content__flex">
-                        <div class="content-block content-block__item">
+                        <div class="content-block content-block__item animated fadeInRight visible" id="about">
                             <p class="content-block__text">Предстоящий американский супергеройский фильм, основанный на одноимённых комиксах издательства DC Comics. Картина будет выпущена компанией Warner Bros. и будет перезагрузкой всех фильмов о Бэтмене.</p><br>
                             <p class="content-block__text">Фильм является десятым по счёту фильмом из Расширенной вселенной DC. Режиссёром и сценаристом фильма выступит Мэтт Ривз, а главную роль исполнит Роберт Паттинсон</p>
                             <h3 class="title content-block__title">Разработка</h3>
                             <p class="content-block__text">В октябре 2014 года студия Warner Bros. объявила, что в разработке находится сольный фильм о Бэтмене, роль которого вновь исполнит Бен Аффлек. В июле 2015 года сообщалось, что Аффлек ведёт переговоры со студией по поводу постановки фильма и совместного написания сценария с Джеффом Джонсом.</p><br>
                             <p class="content-block__text">После выхода фильма «Бэтмен против Супермена: На заре справедливости» руководитель агентства WME Патрик Уайтсел подтвердил, что Аффлек написал сценарий для сольного фильма о Бэтмене и в настоящий момент его рассматривают студия и DC. В мае 2016 года Джереми Айронс подтвердил, что он появится в фильме про Тёмного Рыцаря.</p><br>
                             <p class="content-block__text">На Comic-Con в Сан-Диего в июле 2016 года было официально подтверждено, что Аффлек станет режиссёром картины. В августе 2016 года на одной из страниц Аффлека в социальных сетях был опубликован тестовый материал, в котором был показан персонаж Детстроук. 8 сентября 2016 года Джефф Джонс подтвердил, что Джо Манганьелло сыграет наёмника Слейда Уилсона, который, возможно, станет главным злодеем фильма.</p>
+                        </div>
+
+                        <div class="content-block content-block__item animated fadeInRight" id="reviews">
+                            <p class="content-block__text">Рецензии находится в разработке</p>
+                        </div>
+
+                        <div class="content-block content-block__item animated fadeInRight" id="premieres">
+                            <p class="content-block__text">Премьеры находится в разработке</p>
+                        </div>
+
+                        <div class="content-block content-block__item animated fadeInRight" id="actors">
+                            <p class="content-block__text">Актёры находится в разработке</p>
+                        </div>
+
+                        <div class="content-block content-block__item animated fadeInRight" id="awards">
+                            <p class="content-block__text">Награды находится в разработке</p>
+                        </div>
+
+                        <div class="content-block content-block__item animated fadeInRight" id="facts">
+                            <p class="content-block__text">Факты находится в разработке</p>
+                        </div>
+
+                        <div class="content-block content-block__item animated fadeInRight" id="sites">
+                            <p class="content-block__text">Сайты находится в разработке</p>
                         </div>
                         <div class="right-block">
                             <h3 class="title right-block__title">Подпишитесь на обновления</h3>
@@ -95,5 +122,10 @@
             </div>
         </main>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
