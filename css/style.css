@@ -262,3 +262,137 @@ body {
     top: 0;
     right: 0;
 }
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .tabs__tabs {
+        margin-left: 0;
+    }
+    .content-block__item {
+        margin-right: 25px;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .tabs {
+        display: block;
+        line-height: 2;
+    }
+    .tabs__link:not(:last-child) {
+        margin-right: 10px;
+    }
+    .content__flex {
+        display: block;
+        margin-top: 15px;
+    }
+    .content-block__item {
+        margin-right: 0;
+    }
+    .content-block__title {
+       margin: 22px 0;
+    }
+    .right-block {
+        max-width: 220px;
+    }
+    .right-block__title {
+        margin-top: 25px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .header-top {
+        flex-wrap: wrap;
+    }
+    .search {
+        margin-top: 28px;
+        flex-basis: 100%;
+        order: 2;
+    }
+    .main__title,
+    .main__title-en {
+        display: block;
+        text-align: center;
+    }
+    .info {
+        display: flex;
+        justify-content: center;
+    }
+    .info__more {
+        display: none;
+    }
+    .wrapper {
+        display: block;
+    }
+    .left-block {
+        max-width: 220px;
+        margin: 0 auto;
+    }
+    .left-block__poster {
+        display: block;
+        background-image: url('../img/poster220.jpg');
+        max-width: 220px;
+        min-height: 315px;
+    }
+    .content__block {
+        margin-left: 0;
+    }
+    .actors__title,
+    .actors__subtitle {
+        display: none;
+    }
+    .right-block {
+        margin: 0 auto;
+    }
+    .right-block__form {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 576px) {
+    body {
+        background-size: inherit;
+    }
+    .container {
+        max-width: 540px;
+        margin: 0 20px;
+    }
+    .wrapper {
+        padding-bottom: 50px;
+    }
+    .tabs__link {
+        display: block;
+        margin: 10px 0;
+    }
+    .tabs__link:last-child {
+        display: none;
+    }
+    .info__movie-info {
+        display: block;
+    }
+    .info__play {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 380px) {
+    .left-block {
+        max-width: 183px;
+    }
+    .left-block__poster {
+        background-image: url('../img/poster.jpg');
+        max-width: 183px;
+        min-height: 262px;
+    }
+    .right-block {
+        max-width: 183px;
+    }
+    .right-block__img {
+        background-image: url('../img/right-banner183.png');
+        max-width: 183px;
+        min-height: 260px;
+    }
+}
